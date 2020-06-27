@@ -24,7 +24,7 @@
 		}
 
 		public function insertar($nombre,$apellido,$curso,$alumnos,$numero){
-			$sql="INSERT INTO `cliente`(`nombre`, `apellido`, `curso`, `alumnos`, `numero`) VALUES ('$nombre','$apellido','$curso','$alumnos', '$numero')";
+			$sql="INSERT INTO `cliente`(`nombre`, `apellido`, `cursos`, `alumnos`, `numero`) VALUES ('$nombre','$apellido','$curso','$alumnos', '$numero')";
 		
 			$rest=mysqli_query($this->con, $sql);
 			if ($rest) {
