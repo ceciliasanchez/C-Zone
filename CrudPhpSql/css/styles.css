@@ -1,0 +1,13 @@
+.jumbotron{
+    color: #1293d4;
+    background: url("../img/fondo.JPG"); 
+    background-size: cover;
+    overflow: hidden;
+  }
+ 
+  .jumbotron2{
+    color: #1293d4;
+    background: url("../img/fondo2.jpg"); 
+    background-size: cover;
+    overflow: hidden;
+  }
