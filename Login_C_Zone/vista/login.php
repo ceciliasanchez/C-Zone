@@ -3,6 +3,7 @@
 
 <div class="container">
 
+
 	<div class="starter-template">
 		<br>
 		<br>
@@ -10,6 +11,7 @@
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
+				
 					<div class="panel-body">
 						<form id="loginForm" action="validarCode.php" method="POST" role="form">
 							<legend>Iniciar sesión</legend>
@@ -31,6 +33,7 @@
 			</div>
 		</div>
 	</div>
+
 
 </div><!-- /.container -->
 
