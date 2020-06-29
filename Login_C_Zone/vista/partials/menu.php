@@ -17,7 +17,7 @@
         
             <li><a href="login.php">Login</a></li>
            
-            <li><a href="registro.php">Registro</a></li>
+            <li><a href="registro.php">Registrarse</a></li>
             <?php } else {
     ?>
               <?php if ($_SESSION["usuario"]["privilegio"] == 1) {?>

@@ -9,9 +9,10 @@
 		<br>
 		<br>
 
-		
-		<div align="left"><img src="img1.jpg"></div>
+
 		<div class="row" >
+		<img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
+	
 			<div class=" col-md-offset-7">
 			
 				<div class="panel panel-default">
@@ -38,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-	
+	</div>
 
 </div><!-- /.container -->
 
