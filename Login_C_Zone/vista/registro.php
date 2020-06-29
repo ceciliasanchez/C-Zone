@@ -17,6 +17,7 @@
 								<label for="nombre">Nombre </label>
 								<input type="text" name="txtNombre" class="form-control" id="nombre" autofocus required placeholder="Ingresa tu nombre">
 							</div>
+							
 
 							<div class="form-group">
 								<label for="email">E-mail</label>
