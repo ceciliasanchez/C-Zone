@@ -1,12 +1,27 @@
 <?php include 'partials/head.php';?>
 
-
-<div class="container">
+<section class="bloques" style="background-color: #F5F4F4;">
+    <div class="container">
+        <div class="row">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <div class="col-lg-4">
+         <img src="1.jpeg" class="rounded" alt="" width="700" height="400"> 
+        </div>
+         
+		<div class="col-lg-4">
+		
+		<div class="container">
 
 	<div class="starter-template">
-		<br>
-		<br>
-		<br>
+
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
@@ -40,7 +55,15 @@
 			</div>
 		</div>
 	</div>
+	
+        </div>
+		</div>
 
-</div><!-- /.container -->
+        
+      </div>
+    </div>
+  </section>
+
+
 
 <?php include 'partials/footer.php';?>
