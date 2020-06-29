@@ -5,10 +5,7 @@
         <div class="row">
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-        <title>C - ZONE</title>
+		<img src="REGISTRO.JPG" class="rounded" alt="" width="400" height="100" align="center"> 
 		<br>
 		<br>
 		<br>
@@ -20,10 +17,10 @@
 		<div class="col-lg-4">
 		
 		<div class="container">
-
 	<div class="starter-template">
 
 		<div class="row">
+		
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
 					<div class="panel-body">

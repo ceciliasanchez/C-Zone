@@ -7,9 +7,12 @@
 		<br>
 		<br>
 		<br>
+		
 		<div class="row" >
+		<img src="TITLE.JPG" class="rounded" alt="" width="200" height="50" align="rigth"> 
+		<br>
         <img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
-
+		
             <div class=" col-md-offset-7">
 				<div class="panel panel-default">
 					<div class="panel-body">
@@ -33,6 +36,8 @@
 			</div>
 		</div>
 	</div>
-
+	<head>
+<title> el titulo</title>
+</head>
 </div><!-- /.container -->
 <?php include 'partials/footer.php';?>
