@@ -3,25 +3,26 @@
 
 <div class="container">
 
-
 	<div class="starter-template">
 		<br>
 		<br>
 		<br>
+<<<<<<< HEAD
 
 
-		<div class="row" >
-		<img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
-	
-			<div class=" col-md-offset-7">
+		
 			
+=======
+		<div class="row" >
+        <img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
+
+            <div class=" col-md-offset-7">
+>>>>>>> origin/Andres
 				<div class="panel panel-default">
-				
 					<div class="panel-body">
-					
 						<form id="loginForm" action="validarCode.php" method="POST" role="form">
 							<legend>Iniciar sesión</legend>
-							
+
 							<div class="form-group">
 								<label for="usuario">Usuario</label>
 								<input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="usuario">
@@ -39,8 +40,10 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
 	</div>
+=======
+>>>>>>> origin/Andres
 
 </div><!-- /.container -->
-
 <?php include 'partials/footer.php';?>
