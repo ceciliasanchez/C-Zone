@@ -7,17 +7,13 @@
 		<br>
 		<br>
 		<br>
-<<<<<<< HEAD
-
 
 		
-			
-=======
 		<div class="row" >
-        <img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
-
-            <div class=" col-md-offset-7">
->>>>>>> origin/Andres
+		<img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
+	
+			<div class=" col-md-offset-7">
+			
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<form id="loginForm" action="validarCode.php" method="POST" role="form">
@@ -40,10 +36,7 @@
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD
 	</div>
-=======
->>>>>>> origin/Andres
 
 </div><!-- /.container -->
 <?php include 'partials/footer.php';?>

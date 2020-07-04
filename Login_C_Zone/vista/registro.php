@@ -10,7 +10,9 @@
 		<br>
 		<br>
 		<br>
+		<head>
         <title>C - ZONE</title>
+		</head>
 		<br>
 		<br>
 		<br>
