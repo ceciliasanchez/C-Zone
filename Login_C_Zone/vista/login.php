@@ -3,24 +3,19 @@
 
 <div class="container">
 
-
 	<div class="starter-template">
 		<br>
 		<br>
 		<br>
-
-		
-		<div align="left"><img src="img1.jpg"></div>
 		<div class="row" >
-			<div class=" col-md-offset-7">
-			
+        <img src="img1.jpg" class="rounded" alt="" width="600" height="500" align="left"> 
+
+            <div class=" col-md-offset-7">
 				<div class="panel panel-default">
-				
 					<div class="panel-body">
-					
 						<form id="loginForm" action="validarCode.php" method="POST" role="form">
 							<legend>Iniciar sesión</legend>
-							
+
 							<div class="form-group">
 								<label for="usuario">Usuario</label>
 								<input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="usuario">
@@ -38,8 +33,6 @@
 			</div>
 		</div>
 	</div>
-	
 
 </div><!-- /.container -->
-
 <?php include 'partials/footer.php';?>
