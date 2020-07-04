@@ -7,12 +7,8 @@
 		<div class="row">
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<head>
-        <title>C - ZONE</title>
-		</head>
+
+		<img src="REGISTRO.JPG" class="rounded" alt="" width="600" height="130" align="center"> 
 		<br>
 		<br>
 		<br>
@@ -24,7 +20,6 @@
 		<div class="col-lg-4">
 		
 		<div class="container">
-
 	<div class="starter-template">
 	
 		<div class="row">
