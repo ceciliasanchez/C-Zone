@@ -5,7 +5,7 @@
         <div class="row">
 		<br>
 		<br>
-		<img src="REGISTRO.JPG" class="rounded" alt="" width="400" height="100" align="center"> 
+		<img src="REGISTRO.JPG" class="rounded" alt="" width="600" height="130" align="center"> 
 		<br>
 		<br>
 		<br>
