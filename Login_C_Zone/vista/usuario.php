@@ -99,6 +99,21 @@ if (isset($_SESSION["usuario"])) {
         document.getElementById('submit').addEventListener('click', function() {
           geocodeAddress(geocoder, map);
         });
+
+          //San Sebastian
+         // Marcador 1 
+   var marker = new google.maps.Marker({
+      position: { lat: -4.010767912, lng: -79.18994582 }, // coodernadas del marcador 1
+      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+   });
+   marker.setMap(map);
+   // Marcador 2
+   var marker2 = new google.maps.Marker({
+      position: { lat: -4.00749648, lng: -79.19509295 }, // coordenadas del marcador 2
+      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+   });
+   marker2.setMap(map);
+   
       }
 
       function geocodeAddress(geocoder, resultsMap) {
