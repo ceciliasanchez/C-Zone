@@ -193,10 +193,7 @@ if (isset($_SESSION["usuario"])) {
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker15.setMap(map);
-
       }
-      
-
       function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
         geocoder.geocode({'address': address}, function(results, status) {
