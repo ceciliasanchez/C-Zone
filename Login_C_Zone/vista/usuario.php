@@ -133,6 +133,13 @@ if (isset($_SESSION["usuario"])) {
           fillColor: '#FF0000',
           fillOpacity: 0.35
         });
+      var popup = new google.maps.InfoWindow();
+
+      poligono.addListener('click', function (e) {
+        popup.setContent('Parroquia San Sebastian');
+        popup.setPosition(e.latLng);
+        popup.open(map);
+      });
         poligono.setMap(map);
               
         var geocoder = new google.maps.Geocoder();
