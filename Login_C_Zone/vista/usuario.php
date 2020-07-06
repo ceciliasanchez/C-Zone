@@ -97,7 +97,7 @@ if (isset($_SESSION["usuario"])) {
         });
         var mapProp = {
           center: {lat: -4.015357, lng: -79.201764},
-          zoom: 13,
+          zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         // Agregando el mapa al tag de id googleMap
