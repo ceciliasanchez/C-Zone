@@ -316,6 +316,13 @@ if (isset($_SESSION["usuario"])) {
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker35.setMap(map);
+              // Carigan
+             //Marcador 36
+             var marker36 = new google.maps.Marker({
+             position: { lat: -3.935398767, lng: -79.22412795}, // coordenadas del marcador 2
+             icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+             });
+             marker36.setMap(map);
       }
       function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
