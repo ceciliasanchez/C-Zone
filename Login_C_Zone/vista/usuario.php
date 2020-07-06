@@ -93,7 +93,48 @@ if (isset($_SESSION["usuario"])) {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: {lat: -4.015357, lng: -79.201764}
+          
         });
+        var mapProp = {
+          center: {lat: -4.015357, lng: -79.201764},
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        // Agregando el mapa al tag de id googleMap
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+       
+      
+        // Definiendo las coordenadas para el path del polígono
+        var triangleCoords = [
+          { lat: -4.010767912, lng: -79.18994582 }, // 1
+          { lat: -4.00749648, lng: -79.19509295 },// 2
+          { lat: -4.003567203, lng: -79.19501404 },//3
+          { lat: -4.000136993, lng: -79.19900182 }, //4
+          { lat: -4.000136993, lng: -79.19900182 },//5
+          { lat: -4.000542659, lng: -79.20485037 },//6
+          { lat: -4.018021133, lng: -79.2027895 },//7
+          { lat: -4.02383058, lng: -79.2009713 },//8
+          { lat: -4.034395256, lng: -79.20005889 },//9
+          { lat: -4.040727208, lng: -79.20095422 },//10
+          { lat: -4.042999031, lng: -79.19766632 },//11
+          { lat: -4.052667428, lng: -79.19656968 },//12
+          { lat: -4.053894396, lng: -79.19430823},//13
+          { lat: -4.02719436, lng: -79.19689365},//14
+          { lat: -4.010565883, lng: -79.19348329} //15
+
+        ];
+      
+        // Construyendo el póligono
+        var poligono = new google.maps.Polygon({
+          paths: triangleCoords,
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#FF0000',
+          fillOpacity: 0.35
+        });
+        poligono.setMap(map);
+              
         var geocoder = new google.maps.Geocoder();
 
         document.getElementById('submit').addEventListener('click', function() {
@@ -193,7 +234,7 @@ if (isset($_SESSION["usuario"])) {
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker15.setMap(map);
-      }
+      
       function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
         geocoder.geocode({'address': address}, function(results, status) {
@@ -208,10 +249,15 @@ if (isset($_SESSION["usuario"])) {
             alert('Geocode was not successful for the following reason: ' + status);
           }
         });
+      }     
+      
       }
+      
+     
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3fZF5EYi9_AKf7I5pxcmqeDCZVlLFKL8&callback=initMap">
+    
     </script>
   </body>
 </html>
