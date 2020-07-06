@@ -89,32 +89,69 @@ if (isset($_SESSION["usuario"])) {
     </div>
     <div id="map"></div>
     <script>
+
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: {lat: -4.015357, lng: -79.201764}
         });
         var geocoder = new google.maps.Geocoder();
+        
+        //Loja
+
 
         document.getElementById('submit').addEventListener('click', function() {
-          geocodeAddress(geocoder, map);
+          geocodeAddress(geocoder, map) ;
         });
 
-          //San Sebastian
-         // Marcador 1 
-   var marker = new google.maps.Marker({
-      position: { lat: -4.010767912, lng: -79.18994582 }, // coodernadas del marcador 1
-      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-   });
-   marker.setMap(map);
-   // Marcador 2
-   var marker2 = new google.maps.Marker({
-      position: { lat: -4.00749648, lng: -79.19509295 }, // coordenadas del marcador 2
-      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-   });
-   marker2.setMap(map);
-   
+          
       }
+
+      var poligono = new google.maps.LatLng();
+      
+      var poligono = [[
+        new google.maps.LatLng(-4,010767912, -79,18994582),
+        new google.maps.LatLng(-4,000542659, -79,20485037),
+        new google.maps.LatLng(-4,010565883, -79,19348329)
+        ],
+      [
+        new google.maps.LatLng(-4,010767912, -79,18994582),
+        new google.maps.LatLng(-3,990945734 ,-79,19994667),
+        new google.maps.LatLng(-4,011149398, -79,18286689)
+      ],
+      [
+        new google.maps.LatLng(-3,988773649, -79,20357263),
+        new google.maps.LatLng(-3,934934398, -79,21512156),
+        new google.maps.LatLng(-3,984316892, -79,20245339)
+      ],
+      [
+        new google.maps.LatLng(-3,969014232, -79,20732744),
+        new google.maps.LatLng(-3,997936165,-79,21223682),
+        new google.maps.LatLng(-3,970159189, -79,20840778)
+      ],
+      [
+        new google.maps.LatLng(-4,001542399, -79,20472979),
+        new google.maps.LatLng(-4,016452448, -79,22637717),
+        new google.maps.LatLng(-4,018021133, -79,2027895)
+      ],
+      [
+        new google.maps.LatLng(-3,935398767, -79,22412795),
+        new google.maps.LatLng(-3,969014232, -79,20732744),
+        new google.maps.LatLng(-3,935240873, -79,22903801)
+      ]
+      
+  ];
+
+        
+        Loja = new google.maps.Polygon({
+        paths: poligono,
+        strokeColor: "#FF0100",
+        strokeOpacity: 5,
+        strokeWeight: 2,
+        fillColor: "#FF0100",
+        fillOpacity: 0.35
+        });
+        Loja.setMap(map);
 
       function geocodeAddress(geocoder, resultsMap) {
         var address = document.getElementById('address').value;
@@ -122,15 +159,18 @@ if (isset($_SESSION["usuario"])) {
           if (status === 'OK') {
           	resultsMap.setZoom(18);
             resultsMap.setCenter(results[0].geometry.location);
+            Loja.setMap(map);
             var marker = new google.maps.Marker({
               map: resultsMap,
               position: results[0].geometry.location
             });
+            var poligono = new google.maps.LatLng();
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
           }
         });
       }
+      
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3fZF5EYi9_AKf7I5pxcmqeDCZVlLFKL8&callback=initMap">
