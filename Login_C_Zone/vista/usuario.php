@@ -127,10 +127,10 @@ if (isset($_SESSION["usuario"])) {
         // Construyendo el póligono
         var poligono = new google.maps.Polygon({
           paths: triangleCoords,
-          strokeColor: '#FF0000',
+          strokeColor: 'black',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-          fillColor: '#FF0000',
+          fillColor: '#D28E0F',
           fillOpacity: 0.35
         });
       var popup = new google.maps.InfoWindow();
