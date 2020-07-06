@@ -105,7 +105,6 @@ if (isset($_SESSION["usuario"])) {
        
       
         // Definiendo las coordenadas para el path del polígono
-        //Primera Parroquia
         var triangleCoords = [
           { lat: -4.010767912, lng: -79.18994582 }, // 1
           { lat: -4.00749648, lng: -79.19509295 },// 2
@@ -122,12 +121,8 @@ if (isset($_SESSION["usuario"])) {
           { lat: -4.053894396, lng: -79.19430823},//13
           { lat: -4.02719436, lng: -79.19689365},//14
           { lat: -4.010565883, lng: -79.19348329} //15
+
         ];
-
-        
-
-
-
       
         // Construyendo el póligono
         var poligono = new google.maps.Polygon({
