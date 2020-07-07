@@ -105,7 +105,6 @@ if (isset($_SESSION["usuario"])) {
        
       
         // Definiendo las coordenadas para el path del polígono
-
         var triangleCoords = [
           { lat: -4.010767912, lng: -79.18994582 }, // 1
           { lat: -4.00749648, lng: -79.19509295 },// 2
@@ -124,57 +123,17 @@ if (isset($_SESSION["usuario"])) {
           { lat: -4.010565883, lng: -79.19348329} //15
 
         ];
-
-       /* var triangleCoords2 = [
-          { lat: -4,010767912, lng: -79,18994582 }, // 1
-          { lat: -4,003567203, lng: -79,19501404 },// 2
-          { lat: -4,003541811, lng: -79,19870876 },//3
-          { lat: -4,000136993, lng: -79,19900182 }, //4
-          { lat: -4,000542659, lng: -79,20485037 },//5
-          { lat: -3,991904059, lng: -79,2057629 },//6
-          { lat: -3,988773649, lng: -79,20357263 },//7
-          { lat: -3,991404915, lng: -79,20163807 },//8
-          { lat: -3,990945734, lng: -79,19994667 },//9
-          { lat: -3,992415751, lng: -79,19891386 },//10
-          { lat: -3,992262832, lng: -79,19652479 },//11
-          { lat: -3,989500918, lng: -79,19800423 },//12
-          { lat: -3,991272114, lng: -79,18835278},//13
-          { lat: -3,990498145, lng: -79,1862942},//14
-          { lat: -4,000546978, lng: -79,18579364}, //15
-          { lat: -4,003595697, lng: -79,18156402}, //15
-          { lat: -4,008022389, lng: -79,18331887},//15
-          { lat: -4,009090258, lng: -79,1814378},//15
-          { lat: -4,011149398, lng: -79,18286689} //15
-*/
-        ];
+      
         // Construyendo el póligono
         var poligono = new google.maps.Polygon({
           paths: triangleCoords,
-          strokeColor: 'black',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#D28E0F',
-          fillOpacity: 0.35
-        });
-      var popup = new google.maps.InfoWindow();
-
-      poligono.addListener('click', function (e) {
-        popup.setContent('Parroquia San Sebastian');
-        popup.setPosition(e.latLng);
-        popup.open(map);
-      });
-        poligono.setMap(map);
-
-      /*  var poligono2 = new google.maps.Polygon({
-          paths: triangleCoords2,
           strokeColor: '#FF0000',
           strokeOpacity: 0.8,
           strokeWeight: 2,
           fillColor: '#FF0000',
           fillOpacity: 0.35
         });
-        poligono2.setMap(map);
-      */
+        poligono.setMap(map);
               
         var geocoder = new google.maps.Geocoder();
 
