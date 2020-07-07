@@ -157,79 +157,79 @@ if (isset($_SESSION["usuario"])) {
              
              //Marcador 3
              var marker3 = new google.maps.Marker({
-             position: { lat: -4.003567203, lng: -79.19501404 }, // coordenadas del marcador 2
+             position: { lat: -4.003567203, lng: -79.19501404 }, // coordenadas del marcador 3
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker3.setMap(map);
               //Marcador 4
               var marker4 = new google.maps.Marker({
-             position: { lat: -4.003541811, lng: -79.19870876 }, // coordenadas del marcador 2
+             position: { lat: -4.003541811, lng: -79.19870876 }, // coordenadas del marcador 4
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker4.setMap(map);
              //Marcador 5
              var marker5 = new google.maps.Marker({
-             position: { lat: -4.000136993, lng: -79.19900182 }, // coordenadas del marcador 2
+             position: { lat: -4.000136993, lng: -79.19900182 }, // coordenadas del marcador 5
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker5.setMap(map);
              //Marcador 6
              var marker6 = new google.maps.Marker({
-             position: { lat: -4.000542659, lng: -79.20485037 }, // coordenadas del marcador 2
+             position: { lat: -4.000542659, lng: -79.20485037 }, // coordenadas del marcador 6
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker6.setMap(map);
              //Marcador 7
              var marker7 = new google.maps.Marker({
-             position: { lat: -4.018021133, lng: -79.2027895 }, // coordenadas del marcador 2
+             position: { lat: -4.018021133, lng: -79.2027895 }, // coordenadas del marcador 7
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker7.setMap(map);
              //Marcador 8
              var marker8 = new google.maps.Marker({
-             position: { lat: -4.02383058, lng: -79.2009713 }, // coordenadas del marcador 2
+             position: { lat: -4.02383058, lng: -79.2009713 }, // coordenadas del marcador 8
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker8.setMap(map);
              //Marcador 9
              var marker9 = new google.maps.Marker({
-             position: { lat: -4.034395256, lng: -79.20005889 }, // coordenadas del marcador 2
+             position: { lat: -4.034395256, lng: -79.20005889 }, // coordenadas del marcador 9
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker9.setMap(map);
              //Marcador 10
              var marker10 = new google.maps.Marker({
-             position: { lat: -4.040727208, lng: -79.20095422 }, // coordenadas del marcador 2
+             position: { lat: -4.040727208, lng: -79.20095422 }, // coordenadas del marcador 10
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker10.setMap(map);
              //Marcador 11
              var marker11 = new google.maps.Marker({
-             position: { lat: -4.042999031, lng: -79.19766632 }, // coordenadas del marcador 2
+             position: { lat: -4.042999031, lng: -79.19766632 }, // coordenadas del marcador 11
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker11.setMap(map);
              //Marcador 12
              var marker12 = new google.maps.Marker({
-             position: { lat: -4.052667428, lng: -79.19656968 }, // coordenadas del marcador 2
+             position: { lat: -4.052667428, lng: -79.19656968 }, // coordenadas del marcador 12
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker12.setMap(map);
               //Marcador 13
               var marker13 = new google.maps.Marker({
-             position: { lat: -4.053894396, lng: -79.19430823}, // coordenadas del marcador 2
+             position: { lat: -4.053894396, lng: -79.19430823}, // coordenadas del marcador 13
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker13.setMap(map);
              //Marcador 14
              var marker14 = new google.maps.Marker({
-             position: { lat: -4.02719436, lng: -79.19689365}, // coordenadas del marcador 2
+             position: { lat: -4.02719436, lng: -79.19689365}, // coordenadas del marcador 14
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
              marker14.setMap(map);
              //Marcador 15
              var marker15 = new google.maps.Marker({
-             position: { lat: -4.010565883, lng: -79.19348329}, // coordenadas del marcador 2
+             position: { lat: -4.010565883, lng: -79.19348329}, // coordenadas del marcador 15
              icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
              });
 
