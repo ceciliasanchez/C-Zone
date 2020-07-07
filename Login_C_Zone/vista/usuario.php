@@ -345,7 +345,7 @@ if (isset($_SESSION["usuario"])) {
       var popup4 = new google.maps.InfoWindow();
 
         poligono4.addListener('click', function (e) {
-        popup4.setContent('Parroquia El Sagrario');
+        popup4.setContent('Parroquia Sucre');
         popup4.setPosition(e.latLng);
         popup4.open(map);
       });
