@@ -312,11 +312,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: '#FE2E2E',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'red',
-=======
-          fillColor: '#FE2E2E',
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono2 = new google.maps.Polygon({
@@ -324,11 +320,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: '#FE2E2E',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'red',
-=======
-          fillColor: '#FE2E2E',
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono3 = new google.maps.Polygon({
@@ -336,11 +328,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: '#00ff00',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'green',
-=======
-          fillColor: '#00ff00',
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono4 = new google.maps.Polygon({
@@ -348,11 +336,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: '#F4FA58',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'yellow',
-=======
-          fillColor: '#F4FA58',
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono5 = new google.maps.Polygon({
@@ -360,11 +344,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: '#F4FA58',
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'yellow',
-=======
-          fillColor: '#F4FA58',
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono6 = new google.maps.Polygon({
@@ -372,11 +352,7 @@ if (isset($_SESSION["usuario"])) {
           strokeColor: "#00ff00",
           strokeOpacity: 0.8,
           strokeWeight: 2,
-<<<<<<< HEAD
           fillColor: 'green',
-=======
-          fillColor: "#00ff00",
->>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         //Informacion Parroquia
