@@ -23,7 +23,9 @@ if (isset($_SESSION["usuario"])) {
     <a class="dropdown-header" href="#">INFORMACIÓN</a>
     <a class="dropdown-header" href="#">MÁS</a>
   </div>
+  
 </div> 
+   
 
 		<div class="jumbotron">
 		  
@@ -33,6 +35,38 @@ if (isset($_SESSION["usuario"])) {
 				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
+          <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Numero de infectados'],
+          ['San Sebastian',     11],
+          ['El Valle',      2],
+          ['El Sagrario',  2],
+          ['Punzara', 2],
+          ['Sucre',    7],
+          ['Carigan',    7]
+        ]);
+
+        var options = {
+          title: 'Numero De Infectados'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+
 					<!--Google map
 					
                 <div id="map-container-google-3" class="z-depth-1-half map-container-3">
@@ -89,6 +123,7 @@ if (isset($_SESSION["usuario"])) {
     </div>
     <div id="map"></div>
     <script>
+              
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
@@ -102,8 +137,8 @@ if (isset($_SESSION["usuario"])) {
         };
         // Agregando el mapa al tag de id googleMap
         var map = new google.maps.Map(document.getElementById("map"), mapProp);
-       
-      
+        
+           
         // Definiendo las coordenadas para el path del polígono
         var sansebastian = [
           { lat: -4.010767912, lng: -79.18994582 }, // 1
@@ -274,50 +309,74 @@ if (isset($_SESSION["usuario"])) {
         // Construyendo el póligono
         var poligono = new google.maps.Polygon({
           paths: sansebastian,
-          strokeColor: 'black',
+          strokeColor: '#FE2E2E',
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'red',
+=======
+          fillColor: '#FE2E2E',
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono2 = new google.maps.Polygon({
           paths: elvalle,
-          strokeColor: 'black',
+          strokeColor: '#FE2E2E',
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'red',
+=======
+          fillColor: '#FE2E2E',
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono3 = new google.maps.Polygon({
           paths: elsagrario,
-          strokeColor: 'black',
+          strokeColor: '#00ff00',
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'green',
+=======
+          fillColor: '#00ff00',
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono4 = new google.maps.Polygon({
           paths: sucre,
-          strokeColor: 'black',
+          strokeColor: '#F4FA58',
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'yellow',
+=======
+          fillColor: '#F4FA58',
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono5 = new google.maps.Polygon({
           paths: punzara,
-          strokeColor: 'black',
+          strokeColor: '#F4FA58',
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'yellow',
+=======
+          fillColor: '#F4FA58',
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         var poligono6 = new google.maps.Polygon({
           paths: carigan,
-          strokeColor: 'black',
+          strokeColor: "#00ff00",
           strokeOpacity: 0.8,
           strokeWeight: 2,
+<<<<<<< HEAD
           fillColor: 'green',
+=======
+          fillColor: "#00ff00",
+>>>>>>> origin/Edison-Ruiz
           fillOpacity: 0.35
         });
         //Informacion Parroquia
@@ -345,7 +404,7 @@ if (isset($_SESSION["usuario"])) {
       var popup4 = new google.maps.InfoWindow();
 
         poligono4.addListener('click', function (e) {
-        popup4.setContent('Parroquia El Sagrario');
+        popup4.setContent('Parroquia Sucre');
         popup4.setPosition(e.latLng);
         popup4.open(map);
       });
@@ -401,5 +460,7 @@ if (isset($_SESSION["usuario"])) {
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3fZF5EYi9_AKf7I5pxcmqeDCZVlLFKL8&callback=initMap">
     
     </script>
+    
   </body>
+  
 </html>
