@@ -23,7 +23,9 @@ if (isset($_SESSION["usuario"])) {
     <a class="dropdown-header" href="#">INFORMACIÓN</a>
     <a class="dropdown-header" href="#">MÁS</a>
   </div>
+  
 </div> 
+   
 
 		<div class="jumbotron">
 		  
@@ -33,6 +35,38 @@ if (isset($_SESSION["usuario"])) {
 				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
+          <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Numero de infectados'],
+          ['San Sebastian',     11],
+          ['El Valle',      2],
+          ['El Sagrario',  2],
+          ['Punzara', 2],
+          ['Sucre',    7],
+          ['Carigan',    7]
+        ]);
+
+        var options = {
+          title: 'Numero De Infectados'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+
 					<!--Google map
 					
                 <div id="map-container-google-3" class="z-depth-1-half map-container-3">
@@ -402,5 +436,7 @@ if (isset($_SESSION["usuario"])) {
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3fZF5EYi9_AKf7I5pxcmqeDCZVlLFKL8&callback=initMap">
     
     </script>
+    
   </body>
+  
 </html>
