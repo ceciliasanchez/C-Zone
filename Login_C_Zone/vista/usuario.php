@@ -45,12 +45,12 @@ if (isset($_SESSION["usuario"])) {
 
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Numero de infectados'],
-          ['San Sebastian',     11],
-          ['El Valle',      2],
-          ['El Sagrario',  2],
-          ['Punzara', 2],
+          ['San Sebastian',     0],
+          ['El Valle',     0],
+          ['El Sagrario',  0],
+          ['Punzara', 0],
           ['Sucre',    7],
-          ['Carigan',    7]
+          ['Carigan',    78]
         ]);
 
         var options = {
@@ -140,6 +140,7 @@ if (isset($_SESSION["usuario"])) {
         
            
         // Definiendo las coordenadas para el path del polígono
+
         var sansebastian = [
           { lat: -4.010767912, lng: -79.18994582 }, // 1
           { lat: -4.00749648, lng: -79.19509295 },// 2
@@ -156,8 +157,8 @@ if (isset($_SESSION["usuario"])) {
           { lat: -4.053894396, lng: -79.19430823},//13
           { lat: -4.02719436, lng: -79.19689365},//14
           { lat: -4.010565883, lng: -79.19348329} //15
-
         ];
+
         var elvalle= [
           {lat:-3.988773649,	lng:-79.20357263},//1
           {lat:-3.991404915,lng:-79.20163807},
