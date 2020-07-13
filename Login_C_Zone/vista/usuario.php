@@ -20,7 +20,7 @@ if (isset($_SESSION["usuario"])) {
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-header" href="#">NOTIFICACIONES</a>
-    <a class="dropdown-header" href="#">INFORMACIÓN</a>
+    <a class="dropdown-header" href="partials/index.html">INFORMACIÓN</a>
     <a class="dropdown-header" href="#">MÁS</a>
   </div>
   
@@ -35,9 +35,14 @@ if (isset($_SESSION["usuario"])) {
 				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
-          <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
+         
+					<!--Google map
+					
+                <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+				  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2042334.8321302196!2d-78.36844492320434!3d-1.205519813206936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1593889009972!5m2!1ses!2sec" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>-->
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -67,14 +72,11 @@ if (isset($_SESSION["usuario"])) {
     <div id="piechart" style="width: 900px; height: 500px;"></div>
   </body>
 
-					<!--Google map
-					
-                <div id="map-container-google-3" class="z-depth-1-half map-container-3">
-				  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2042334.8321302196!2d-78.36844492320434!3d-1.205519813206936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1593889009972!5m2!1ses!2sec" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>-->
-             
-				</p>
-			</div>
+
+        </p>
+        
+      </div>
+      
 		</div>
 	</div>
    
