@@ -455,13 +455,13 @@ if (isset($_SESSION["usuario"])) {
           <h4 class="modal-title">Enviar Queja o Sugerencia</h4>
         </div>
         <div class="modal-body">
-<form class="form-horizontal" role="form" method="post" action="./process.php">
+<form class="form-horizontal" role="form" method="post" action="process.php">
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-3 control-label">Nombre</label>
     <div class="col-lg-4">
       <input type="text" name="fullname" class="form-control" id="inputEmail1" placeholder="Nombre">
     </div>
-    <label for="inputEmail1" class="col-lg-2 control-label">Tel.</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Celular</label>
     <div class="col-lg-3">
       <input type="phone" name="phone" class="form-control" id="inputEmail1" placeholder="Telefono">
     </div>
@@ -473,8 +473,6 @@ if (isset($_SESSION["usuario"])) {
       <input type="text" name="address" class="form-control" id="inputPassword1" placeholder="Domicilio">
     </div>
   </div>
-
-
 
   <div class="form-group">
     <div class="col-lg-3 col-md-offset-3">
@@ -502,29 +500,13 @@ if (isset($_SESSION["usuario"])) {
 		</div>
     </div>
   </div>
-  
-
-
-
-
-<?php
-include "partials/autoload.php";
-include "partials/TeamData.php";
-include "partials/PersonData.php";
-?>
-
-  <?php $teams = TeamData::getAll();?>
   <div class="form-group">
-    <label for="inputPassword1" class="col-lg-3 control-label">Departamento</label>
+    <label for="inputPassword1" class="col-lg-3 control-label">Email</label>
     <div class="col-lg-9">
-<select name="team_id" class="form-control" required="required">
-      <option value="">-- SELECCIONE DEPARTAMENTO --</option>
-      <?php foreach($teams as $team):?>
-        <option value="<?php echo $team->id;?>"><?php echo $team->name;?></option>
-      <?php endforeach;?>
-    </select>
+      <input type="text" name="email" class="form-control" id="inputPassword1" placeholder="Email" required>
     </div>
   </div>
+
   <div class="form-group">
     <label for="inputPassword1" class="col-lg-3 control-label">Mensaje</label>
     <div class="col-lg-9">
