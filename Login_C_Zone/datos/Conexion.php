@@ -2,7 +2,10 @@
 
 class Conexion
 {
-
+    private $dbhost='bhdte3irtd1zcfyiuypu-mysql.services.clever-cloud.com';
+    private $dbuser='ucsxinvotzotdvqn';
+    private $dbpass='cgGohtK0k0rvi13z02NP';
+    private $dbname='bhdte3irtd1zcfyiuypu';
     /**
      * Conexión a la base datos
      *
@@ -11,9 +14,7 @@ class Conexion
     public static function conectar()
     {
         try {
-
-            $cn = new PDO("mysql:host=localhost;dbname=Login_C_Zone", "root", "");
-
+            $cn = new PDO("mysql:host=bhdte3irtd1zcfyiuypu-mysql.services.clever-cloud.com;dbname=bhdte3irtd1zcfyiuypu", "ucsxinvotzotdvqn", "cgGohtK0k0rvi13z02NP");
             return $cn;
 
         } catch (PDOException $ex) {
