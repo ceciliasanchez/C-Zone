@@ -31,6 +31,7 @@ class Core {
 
 	public static function redir($url){
 		echo "<script>window.location='".$url."';</script>";
+		
 	}
 
 	public static function includeJS(){
