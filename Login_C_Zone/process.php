@@ -56,4 +56,5 @@ $contenido = "Nombre: " . $nombre . "\nCelular: " . $celular . "\nDomicilio: " .
 mail($destino,"Usuario",$contenido);
 
 print "<script>alert(\"Mensaje enviado exitosamente.\");</script>";
+header("Location: usuario.php");
 ?>

@@ -35,7 +35,8 @@ if (isset($_SESSION["usuario"])) {
 				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
-         
+          <a data-toggle="modal" href="#myModal" class="btn btn-warning ">Enviar queja o sugerencia</a>
+          
 					<!--Google map
 					
                 <div id="map-container-google-3" class="z-depth-1-half map-container-3">
