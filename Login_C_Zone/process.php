@@ -6,6 +6,10 @@ require 'php/Exception.php';
 require 'php/PHPMailer.php';
 require 'php/SMTP.php';
 
+include "partials/autoload.php";
+include "partials/TeamData.php";
+include "partials/PersonData.php";
+
 $mail = new PHPMailer(true);
 try {
     //Server settings
