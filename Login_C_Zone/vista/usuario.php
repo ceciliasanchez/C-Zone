@@ -102,8 +102,86 @@ primera vez en diciembre de 2019 en la ciudad de Wuhan, provincia de Hubei, en C
 Todavía hay muchas cuestiones que se desconocen en relación a la enfermedad que produce: COVID-19.</h4>
 		</div>
 	</div>
-   
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Enviar Queja o Sugerencia</h4>
+        </div>
+        <div class="modal-body">
+<form class="form-horizontal" role="form" method="post" action="process.php">
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-3 control-label">Nombre</label>
+    <div class="col-lg-4">
+      <input type="text" name="fullname" class="form-control" id="inputEmail1" placeholder="Nombre">
+    </div>
+    <label for="inputEmail1" class="col-lg-2 control-label">Celular</label>
+    <div class="col-lg-3">
+      <input type="phone" name="phone" class="form-control" id="inputEmail1" placeholder="Telefono">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword1" class="col-lg-3 control-label">Domicilio</label>
+    <div class="col-lg-9">
+      <input type="text" name="address" class="form-control" id="inputPassword1" placeholder="Domicilio">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-3 col-md-offset-3">
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="kind" value="1" required>
+		    Queja
+		  </label>
+		</div>
+    </div>
+    <div class="col-lg-3">
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="kind" value="2" required>
+		    Sugerencia
+		  </label>
+		</div>
+    </div>
+    <div class="col-lg-3">
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="kind" value="3" required>
+		    Agradecimiento
+		  </label>
+		</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword1" class="col-lg-3 control-label">Email</label>
+    <div class="col-lg-9">
+      <input type="text" name="email" class="form-control" id="inputPassword1" placeholder="Email" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword1" class="col-lg-3 control-label">Mensaje</label>
+    <div class="col-lg-9">
+    <textarea name="msg" class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-3 col-lg-9">
+      <button type="submit" class="btn btn-default">Enviar mensaje</button>
+    </div>
+  </div>
+</form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <script src="admin/res/bootstrap3/js/bootstrap.min.js"></script>
 	
 </div><!-- /.container -->
+
 
 <?php include 'partials/footer.php';?>
