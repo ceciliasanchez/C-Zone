@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///D:/Humberto/Documents/Google%20Drive/UTPL/UTPL/C10/Python/POO%20Clases/demo5.html -->
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script type="text/javascript"> //grafica
+
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h2,
+      h3 {
+        margin: 10px;
+        font-size: 1.2em;
+      }
+      h3 {
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.85em;
+        margin: 10px;
+        text-align: left;
+      }
+      .map-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.8);
+        margin-right: 20px;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      #features {
+        top: 0;
+        height: 100px;
+        margin-top: 20px;
+        width: 250px;
+      }
+      #legend {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 150px;
+        margin-bottom: 40px;
+        width: 100px;
+      }
+      .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+      }
+      #barras {
+        top: 0;
+        height: 200px;
+        margin-top: 140px;
+        width: 450px;
+      }
+    </style>
+  <style type="text/css"></style></head>
+  <body>
+    <div id="map" class="mapboxgl-map"><div class="mapboxgl-canary" style="visibility: hidden;">
+    </div><div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" width="1870" height="942" style="width: 1496px; height: 754px; cursor: default;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><div class="mapboxgl-ctrl-attrib-inner"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=examples&amp;id=cjgioozof002u2sr5k7t14dim&amp;access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2p0MG01MXRqMW45cjQzb2R6b2ptc3J4MSJ9.zA2W0IkI0c6KaAhJfk9bWg" target="_blank" rel="noopener nofollow">Improve this map</a></div></div></div></div><div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" width="1870" height="942" style="width: 1496px; height: 754px; cursor: default;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><div class="mapboxgl-ctrl-attrib-inner"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=beto16&amp;id=ckc3syn4v011l1hnxs17jxopm&amp;access_token=pk.eyJ1IjoiYmV0bzE2IiwiYSI6ImNrYzJjeng4YzE2MzczOHA5ZGZjczkzMHYifQ.SFhOXToYB4CrLLXz7gj6GQ" target="_blank" rel="noopener nofollow">Improve this map</a></div></div></div></div></div>
+    <div class="map-overlay" id="features">
+      <h2>Número de contagios</h2>
+      <div id="pd"><p>Mueve el cursor a una parroquia</p></div>
+    </div>
+    <div class="map-overlay" id="barras">
+      <div id="barchart_material" style="background-color: rgb(255, 237, 160)"></div>
+    </div>
+    <div class="map-overlay" id="legend"><div><span class="legend-key" style="background-color: rgb(255, 237, 160);"></span><span>0-50</span></div><div><span class="legend-key" style="background-color: rgb(254, 217, 118);"></span><span>50-100</span></div><div><span class="legend-key" style="background-color: rgb(254, 178, 76);"></span><span>100-200</span></div><div><span class="legend-key" style="background-color: rgb(253, 141, 60);"></span><span>200-300</span></div><div>
+
+    <script>
+
+      // define access token
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYmV0bzE2IiwiYSI6ImNrYzJjeng4YzE2MzczOHA5ZGZjczkzMHYifQ.SFhOXToYB4CrLLXz7gj6GQ';
+
+      //create map
+      var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/beto16/ckc4xjkuj14m01inwdjusdxbb' // map style URL from Mapbox Studio
+      });
+
+      // wait for map to load before adjusting it
+      map.on('load', function() {
+        // make a pointer cursor
+        map.getCanvas().style.cursor = 'default';
+
+        // set map bounds to the continental US
+        map.fitBounds([
+          [-79.268561, -4.063836],
+          [-79.160475, -3.900464]
+        ]);
+
+        // make a pointer cursor
+        map.getCanvas().style.cursor = 'default';
+
+        // define layer names
+        var layers = [
+          '0-50',
+          '50-100',
+          '100-200',
+          '200-300'
+        ];
+        var colors = [
+          '#FFED9E',
+          '#FD8D3C',
+          '#FC4E2A',
+          '#F5292C'
+        ];
+
+        // create legend
+        for (i = 0; i < layers.length; i++) {
+          var layer = layers[i];
+          var color = colors[i];
+          var item = document.createElement('div');
+          var key = document.createElement('span');
+          key.className = 'legend-key';
+          key.style.backgroundColor = color;
+
+          var value = document.createElement('span');
+          value.innerHTML = layer;
+          item.appendChild(key);
+          item.appendChild(value);
+          legend.appendChild(item);
+        }
+
+        // change info window on hover
+        map.on('mousemove', function(e) {
+          var states = map.queryRenderedFeatures(e.point, {
+            layers: ['prueba-5-7zywrs']
+          });
+
+          if (states.length > 0) {
+            document.getElementById('pd').innerHTML =
+              '<h3><strong>' +
+              states[0].properties.name +
+              '</strong></h3><p><strong><em>' +
+              states[0].properties.contagiados +
+              '</strong> contagios</em></p>';
+          } else {
+            document.getElementById('pd').innerHTML =
+              '<p>Mueve el cursor a una parroquia</p>';
+          }
+        });
+      });
+
+
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Cotagios', 'Contagiados', 'Fallecidos', 'Recuperados'],
+          ['San Sebastian', 50, 0, 0],
+          ['Sagrario', 150, 0, 0],
+          ['Punzara', 200, 0, 0],
+          ['Carigan', 70, 0, 0],
+          ['El valle', 225, 0, 0],
+          ['Sucre', 350, 0, 0]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Número de contagios por parroquia',
+          },
+          bars: 'horizontal' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+</body></html>
