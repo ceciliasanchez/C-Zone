@@ -1,7 +1,7 @@
 <?php
 
 class Conexion
-{
+{   private $con;
     private $dbhost='bhdte3irtd1zcfyiuypu-mysql.services.clever-cloud.com';
     private $dbuser='ucsxinvotzotdvqn';
     private $dbpass='cgGohtK0k0rvi13z02NP';
@@ -21,5 +21,7 @@ class Conexion
             die($ex->getMessage());
         }
     }
+    
+     
 
 }

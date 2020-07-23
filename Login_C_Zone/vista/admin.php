@@ -19,9 +19,21 @@ if (isset($_SESSION["usuario"])) {
 				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
+					<div class="col-4">
+                <a href="registro.php" class="btn btn-info">Agregar Nuevo Usuario</a>
+				<?php include 'presentar.php';?>
+            </div>
 				</p>
+
 			</div>
 		</div>
 	</div>
+	
 </div><!-- /.container -->
+
+
+
 <?php include 'partials/footer.php';?>
+
+
+
