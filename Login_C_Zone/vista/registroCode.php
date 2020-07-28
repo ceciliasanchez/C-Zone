@@ -26,8 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             header("location:admin.php");
         }
-
+      
     }
 } else {
     header("location:registro.php?error=1");
 }
+

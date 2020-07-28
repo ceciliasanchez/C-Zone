@@ -22,9 +22,10 @@
     ?>
               <?php if ($_SESSION["usuario"]["privilegio"] == 1) {?>
               <li><a href="admin.php">Admin</a></li>
-              <li><a href="layout.php">Mensajes</a></li>
               <?php } else {?>
               <li><a href="usuario.php">Usuario</a></li>
+              <li><a href="partials/index.html">Mapa de Contagios</a></li>
+              <li><a href="RegistroPaciente.php">Registrar Paciente</a></li>
             <?php }
 
 }?>

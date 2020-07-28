@@ -10,9 +10,6 @@ if (isset($_SESSION["usuario"])) {
 ?>
 <?php include 'partials/menu.php';?>
 
-<div class="container">
-
-
 <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -28,7 +25,6 @@ if (isset($_SESSION["usuario"])) {
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/templatemo-style.css">
 
-</head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- PRE LOADER -->
@@ -39,10 +35,8 @@ if (isset($_SESSION["usuario"])) {
                
           </div>
      </section>
-
-
 <!-- HOME -->
-<section id="home">
+     <section id="home">
           <div class="row">
 
                     <div class="owl-carousel owl-theme home-slider">
@@ -87,133 +81,14 @@ if (isset($_SESSION["usuario"])) {
      </section>
 
 
-     <!-- FEATURE -->
-     <section id="feature">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>01</span>
-                              <h3><font color="red">SEMÁFORO ROJO</h3>
-                              <p>Cuando existen mas de 100 contagios, notificamos la gravedad de semáforo en Rojo</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>02</span>
-                              <h3><font color="yellow">SEMÁFORO AMARILLO</h3>
-                              <p>Cuando existen entre 10 y 100 casos, se notifica la gravedad en semáforo en Amarillo</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>03</span>
-                              <h3><font color="green">SEMÁFORO VERDE</h3>
-                              <p>Cuando existen menos de 10 casos, se notifica con semáforo en Verde</p>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-     <!-- FOOTER -->
-     <footer id="footer">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Proyecto - Metodologías ágiles</h2>
-                              </div>
-                              <address>
-                                   <p>Creado mediante proceso de Scrum,<br> Julio del 2020</p>
-                              </address>
-
-                              <ul class="social-icon">
-                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
-                              </ul>
-
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2020 C-ZONE</p>
-                                   
-                                   <p>Scrum Master: Édison Ruiz</p>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Contact Info</h2>
-                              </div>
-                              <address>
-                                   <p>+593 6048 0085, +593 97 984 1323</p>
-                                   <p><a href="mailto:youremail.co">haagila@utpl.edu.ec</a></p>
-                              </address>
-
-                              <div class="footer_menu">
-                                   <h2>Quick Links</h2>
-                                   <ul>
-                                        <li><a href="#">Career</a></li>
-                                        <li><a href="#">Investor</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
-                                        <li><a href="#">Refund Policy</a></li>
-                                   </ul>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12">
-                         <div class="footer-info newsletter-form">
-                              <div class="section-title">
-                                   <h2>Newsletter Signup</h2>
-                              </div>
-                              <div>
-                                   <div class="form-group">
-                                        <form action="#" method="get">
-                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
-                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
-                                        </form>
-                                        <span><sup>*</sup> Please note - we do not spam your email.</span>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-                    
-               </div>
-          </div>
-     </footer>
 
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
 
 
-	<div class="starter-template">
-		<br>
-		<br>
-		<br>
-		<div class="dropdown">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-    OPCIONES
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-header" href="#">NOTIFICACIONES</a>
-    <a class="dropdown-header" href="partials/index.html">INFORMACIÓN</a>
-    <a class="dropdown-header" href="#">MÁS</a>
-  </div>
-  
-</div> 
+
+
+<div class="container">
+
    
 
 		<div class="jumbotron">
@@ -221,24 +96,11 @@ if (isset($_SESSION["usuario"])) {
 			<div class="container text-center">
 				<h1><strong>Bienvenido</strong> <?php echo $_SESSION["usuario"]["nombre"]; ?></h1>
 				
-				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?></span></p>
+				<p>Panel de control | <span class="label label-info"><?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Usuario'; ?></span></p>
 				<p>
 					<a href="cerrar-sesion.php" class="btn btn-primary btn-lg">Cerrar sesión</a>
           <a data-toggle="modal" href="#myModal" class="btn btn-warning ">Enviar queja o sugerencia</a>
           
-					<!--Google map
-					
-                <div id="map-container-google-3" class="z-depth-1-half map-container-3">
-				  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2042334.8321302196!2d-78.36844492320434!3d-1.205519813206936!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1593889009972!5m2!1ses!2sec" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>-->
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      
-
-
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -310,6 +172,7 @@ if (isset($_SESSION["usuario"])) {
   <div class="form-group">
     <div class="col-lg-offset-3 col-lg-9">
       <button type="submit" class="btn btn-default">Enviar mensaje</button>
+      <?= $result; ?>
     </div>
   </div>
 </form>
@@ -320,6 +183,135 @@ if (isset($_SESSION["usuario"])) {
   <script src="admin/res/bootstrap3/js/bootstrap.min.js"></script>
 	
 </div><!-- /.container -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FEATURE -->
+     <section id="feature">
+          
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>01</span>
+                              <h3><font color="red">SEMÁFORO ROJO</h3>
+                              <p>Cuando existen mas de 100 contagios, notificamos la gravedad de semáforo en Rojo</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>02</span>
+                              <h3><font color="yellow">SEMÁFORO AMARILLO</h3>
+                              <p>Cuando existen entre 10 y 100 casos, se notifica la gravedad en semáforo en Amarillo</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>03</span>
+                              <h3><font color="green">SEMÁFORO VERDE</h3>
+                              <p>Cuando existen menos de 10 casos, se notifica con semáforo en Verde</p>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Proyecto - Metodologías ágiles</h2>
+                              </div>
+                              <address>
+                                   <p>Creado mediante proceso de Scrum,<br> Julio del 2020</p>
+                              </address>
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2020 C-ZONE</p>
+                                   
+                                   <p>Scrum Master: Édison Ruiz</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p>+593 6048 0085, +593 97 984 1323, +593 98 160 7704, +593 93 994 8354, +593 99 673 9383</p>
+                                   <p><a href="mailto:youremail.co">haagila@utpl.edu.ec</a></p>
+                                   <p><a href="mailto:youremail.co">humbertocueva97@gmail.com</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Miembros del Grupo</h2>
+                                   <ul>
+                                        <li><a href="#">Joseph Cueva</a></li>
+                                        <li><a href="#">Pablo Picon</a></li>
+                                        <li><a href="#">Cecilia Sanchez</a></li>
+                                        <li><a href="#">Andrés Agila</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="footer-info newsletter-form">
+                              <div class="section-title">
+                                   <h2>Información a su correo</h2>
+                              </div>
+                              <div>
+                                   <div class="form-group">
+                                        <form action="#" method="get">
+                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required="">
+                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                        </form>
+                                        <span><sup>*</sup> Please note - we do not spam your email.</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
 
 
 <?php include 'partials/footer.php';?>

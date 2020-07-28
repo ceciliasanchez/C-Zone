@@ -1,23 +1,26 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-if(!empty($_POST)){
-	include "partials/autoload.php";
-	include "partials/TeamData.php";
-	include "partials/PersonData.php";
-	
-		$destino = "pfpicon@utpl.edu.ec";
-		$criteria = new Criteria("item");
-		$criteria->insert(array(
-			"fullname"=>"\"$_POST[fullname]\"",
-			"phone"=>"\"$_POST[phone]\"",
-			"address"=>"\"$_POST[address]\"",
-			"kind"=>"\"$_POST[kind]\"",
-			"email"=>"\"$_POST[email]\"",
-			"msg"=>"\"$_POST[msg]\"",
-			"created_at"=>"NOW()"
-			));
-		print "<script>alert(\"Mensaje enviado exitosamente.\");</script>";
-		Core::redir("./");
-	
-	}
+require 'php/Exception.php';
+require 'php/PHPMailer.php';
+require 'php/SMTP.php';
+
+$destino = "appczone2020@gmail.com";
+$nombre = $_POST["fullname"];
+$celular = $_POST["phone"];
+$domicilio = $_POST["addres"];
+$tipo = $_POST["kind"];
+$email = $_POST["email"];
+$mensaje = $_POST["msg"];
+$contenido = "Nombre: " . $nombre . "\nCelular: " . $celular . "\nDomicilio: " . $domicilio . "\nTipo: " . $tipo . "\nEmail:" . $email . "\nMensaje:" . $mensaje;
+
+mail($destino,"Usuario",$contenido);
+
+print "<script>alert(\"Mensaje enviado exitosamente.\");</script>";
+echo 'Mensaje enviado correctamente';
+
+header("Location: usuario.php");
+exit;
+
 ?>
