@@ -241,7 +241,7 @@ if (isset($_SESSION["usuario"])) {
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-info">
                               <div class="section-title">
-                                   <h2>Proyecto - Metodologías ágiles</h2>
+                                   <h2>Proyecto - Software</h2>
                               </div>
                               <address>
                                    <p>Creado mediante proceso de Scrum,<br> Julio del 2020</p>
@@ -254,9 +254,9 @@ if (isset($_SESSION["usuario"])) {
                               </ul>
 
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2020 C-ZONE</p>
+                                   <p>Copyright &copy; 2020 RED FLAG </p>
                                    
-                                   <p>Scrum Master: Édison Ruiz</p>
+                                   
                               </div>
                          </div>
                     </div>
@@ -267,18 +267,18 @@ if (isset($_SESSION["usuario"])) {
                                    <h2>Contact Info</h2>
                               </div>
                               <address>
-                                   <p>+593 6048 0085, +593 97 984 1323, +593 98 160 7704, +593 93 994 8354, +593 99 673 9383</p>
-                                   <p><a href="mailto:youremail.co">haagila@utpl.edu.ec</a></p>
-                                   <p><a href="mailto:youremail.co">humbertocueva97@gmail.com</a></p>
+                                   <p> +593 93 994 8354</p>
+                                   <p><a href="mailto:youremail.co">emruiz4@utpl.edu.ec</a></p>
+                                   
                               </address>
 
                               <div class="footer_menu">
                                    <h2>Miembros del Grupo</h2>
                                    <ul>
-                                        <li><a href="#">Joseph Cueva</a></li>
-                                        <li><a href="#">Pablo Picon</a></li>
-                                        <li><a href="#">Cecilia Sanchez</a></li>
-                                        <li><a href="#">Andrés Agila</a></li>
+                                        <li><a href="#">Edison Ruiz Moncayo</a></li>
+                                        <li><a href="#">Jefferson Sarango Vega</a></li>
+                                        <li><a href="#">.............</a></li>
+                                        <li><a href="#">...........</a></li>
                                    </ul>
                               </div>
                          </div>
